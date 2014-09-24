@@ -26,3 +26,17 @@ function dot_product(a,b) {
 function getlength(a) {
   return a.length
 }
+
+
+// find a value in a vector
+function ifI(findThis,inThisVec) {
+  var found = new Array(inThisVec.length);
+  for (var i=0;i<inThisVec.length;i++){
+    if (findThis == inThisVec[i]) {
+      found.push([ inThisVec.indexOf(findThis) ,findThis])
+      
+    }
+    
+  }
+  return found
+}
