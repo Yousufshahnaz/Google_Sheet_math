@@ -1,3 +1,5 @@
+
+//find the dot product of two vectors
 function dot_product(a,b) {
   Array.prototype.sum = function(selector) {
     if (typeof selector !== 'function') {
@@ -17,4 +19,10 @@ function dot_product(a,b) {
     c[i] = a[i]*b[i]
   }
   return c.sum()
+}
+
+
+//find the length of a vector
+function getlength(a) {
+  return a.length
 }
